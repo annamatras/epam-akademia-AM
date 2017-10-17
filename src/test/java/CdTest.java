@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -21,6 +22,13 @@ public class CdTest{
         verify(currentDirectory).newDir("src");
     }
 
+    @Test
+    public void printCurrentDirectoryWhenNoArguments() throws Exception {
+        when(currentDirectory.newDir(any())).thenReturn("/home/user");
 
+        String result = cd.run();
+
+        assertThat(result).isEqualTo("/home/user");
+    }
 
 }
