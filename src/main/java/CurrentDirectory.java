@@ -1,10 +1,10 @@
 import java.io.File;
 
-public class CurrentDirectory {
+class CurrentDirectory {
 
     private File file;
 
-    public CurrentDirectory() {
+    CurrentDirectory() {
         file = new File("");
     }
 

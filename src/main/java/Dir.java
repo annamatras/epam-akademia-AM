@@ -18,6 +18,7 @@ class Dir implements Program {
         return result.toString();
     }
 
+    @Override
     public String name() {
         return "dir";
     }
