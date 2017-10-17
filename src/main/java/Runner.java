@@ -4,13 +4,14 @@ class Runner {
     private final Printer printer;
     private final Input input;
 
-    public Runner(ProgramManager manager, Printer printer, Input input) {
+    Runner(ProgramManager manager, Printer printer, Input input) {
         this.manager = manager;
         this.printer = printer;
         this.input = input;
     }
 
     void run() {
+
         while (true) {
             String userInput = input.read();
             String[] inputs = userInput.split(" ");
