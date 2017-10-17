@@ -2,6 +2,7 @@
 .idea/.name
 .idea/misc.xml
 .idea/workspace.xml
-epam-akademia-AM.iml
+simplyShell.iml
 .idea/libraries/
 target/
+.idea/kotlinc.xml
