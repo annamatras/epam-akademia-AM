@@ -1,7 +1,26 @@
+import java.io.File;
+
 public class CurrentDirectory {
 
+    private File file;
 
-    public String newDir(String src) {
-        return ".";
+    CurrentDirectory() {
+        file = new File(".");
+    }
+
+    String[] list() {
+        return file.list();
+    }
+
+    String newDir(String command) {
+        String path = file.getAbsolutePath();
+        File newFile = new File(path + File.separator + command);
+        if (newFile.isDirectory()) {
+            file = newFile;
+            return file.getAbsolutePath();
+        } else {
+            System.out.println("Directory not found: " + newFile.getAbsolutePath());
+            return file.getAbsolutePath();
+        }
     }
 }
