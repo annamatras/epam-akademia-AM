@@ -5,7 +5,7 @@ public class CurrentDirectory {
     private File file;
 
     CurrentDirectory() {
-        file = new File(".");
+        file = new File("");
     }
 
     String[] list() {

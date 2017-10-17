@@ -10,7 +10,7 @@ public class Cd implements Program {
         if (args.length > 0) {
             return currentDirectory.newDir(args[0]);
         } else {
-            return currentDirectory.newDir(".");
+            return currentDirectory.newDir("");
         }
     }
 
