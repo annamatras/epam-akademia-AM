@@ -3,5 +3,6 @@
 .idea/.name
 .idea/misc.xml
 .idea/workspace.xml
-src/
 epam-akademia-AM.iml
+.idea/libraries/
+target/
