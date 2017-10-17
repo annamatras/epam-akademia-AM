@@ -40,11 +40,7 @@ class AppFactory {
         return new Printer();
     }
 
-    void run() {
-
-    }
-
-    public Input getInput() {
+    private Input getInput() {
         return new Input();
     }
 }
