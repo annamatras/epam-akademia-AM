@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Input {
+class Input {
 
     private Scanner scanner = new Scanner(System.in);
 
-    public String read() {
+    String read() {
         scanner.useDelimiter(System.getProperty("line.separator"));
         return scanner.next();
     }
