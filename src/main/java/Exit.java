@@ -1,4 +1,4 @@
-public class Exit implements Program {
+class Exit implements Program {
 
     @Override
     public String run(String... args) {

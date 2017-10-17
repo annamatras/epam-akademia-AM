@@ -1,4 +1,4 @@
-public interface Program {
+interface Program {
 
     String run(String ... args);
     String name();

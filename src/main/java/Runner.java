@@ -10,7 +10,7 @@ class Runner {
         this.input = input;
     }
 
-    void run() {
+    public void run() {
 
         while (true) {
             String userInput = input.read();

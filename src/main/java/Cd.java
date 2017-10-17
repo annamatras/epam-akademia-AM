@@ -1,4 +1,4 @@
-public class Cd implements Program {
+class Cd implements Program {
 
     private CurrentDirectory currentDirectory;
 
@@ -6,6 +6,7 @@ public class Cd implements Program {
         this.currentDirectory = currentDirectory;
     }
 
+    @Override
     public String run(String... args) {
         if (args.length > 0) {
             return currentDirectory.newDir(args[0]);

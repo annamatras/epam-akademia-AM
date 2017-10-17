@@ -1,8 +1,8 @@
-public class Dir implements Program {
+class Dir implements Program {
 
-    CurrentDirectory currentDirectory;
+    private CurrentDirectory currentDirectory;
 
-    public Dir(CurrentDirectory currentDirectory) {
+    Dir(CurrentDirectory currentDirectory) {
         this.currentDirectory = currentDirectory;
     }
 

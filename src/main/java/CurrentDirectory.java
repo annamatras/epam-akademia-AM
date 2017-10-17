@@ -4,7 +4,7 @@ public class CurrentDirectory {
 
     private File file;
 
-    CurrentDirectory() {
+    public CurrentDirectory() {
         file = new File("");
     }
 
