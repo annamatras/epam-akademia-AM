@@ -23,4 +23,17 @@ class CurrentDirectory {
             return file.getAbsolutePath();
         }
     }
+
+    String getCurrentDirName() {
+        return file.getName();
+    }
+
+    public File getCurrentDir() {
+        return file;
+    }
+
+    public MyFile[] listFiles() {
+        return new MyFileImpl(getCurrentDir()).listFiles();
+
+    }
 }
